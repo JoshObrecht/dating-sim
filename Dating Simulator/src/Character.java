@@ -1,5 +1,5 @@
 
-public class CharacterTraits
+public class Character
 	{
 		private String name;
 		private int gender;
@@ -8,7 +8,7 @@ public class CharacterTraits
 		private int dislikes; 
 		private int socialStanding;
 		
-		public CharacterTraits (String n, int g, int a, int l, int d, int s)
+		public Character(String n, int g, int a, int l, int d, int s)
 		{
 		name=n;
 		gender=g;
