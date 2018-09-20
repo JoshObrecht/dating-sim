@@ -55,6 +55,16 @@ public class Player
 		{
 			this.luck = luck;
 		}
+
+	public int getConfidence()
+		{
+			return confidence;
+		}
+
+	public void setConfidence(int confidence)
+		{
+			this.confidence = confidence;
+		}
 	
 	
 	
