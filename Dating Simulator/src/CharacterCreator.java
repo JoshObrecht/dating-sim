@@ -171,11 +171,6 @@ public class CharacterCreator
 			player.setName(userString.nextLine());
 			player.setCharisma(charisma);
 			player.setConfidence(confidence);
-			System.out.println(player.getName());
-			System.out.println(player.getCharisma());
-			System.out.println(player.getConfidence());
-			
-			
 				
 			}
 	}
