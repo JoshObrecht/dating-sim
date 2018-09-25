@@ -6,6 +6,7 @@ public class CharacterCreator
 		static ArrayList<Character> characters= new ArrayList<Character>();	
 		static Scanner userString = new Scanner(System.in);
 		static Scanner userInt = new Scanner(System.in);
+		static Player player = new Player("", 0, 0, 0, 0);
 		
 		public static void createCharacters()
 			{
@@ -32,7 +33,7 @@ public class CharacterCreator
 				
 			int confidence=0;
 			int charisma=0; 
-			Player player = new Player("", 0, 0, 0, 0);
+			
 			
 			System.out.println("Hello and thank you for playing. To begin we're going to find out who you are through a personality test."
 					+ "\nI'm going give you 10 statements. Type 1 if you agree with the statement. Type 2 if you disagree.");
