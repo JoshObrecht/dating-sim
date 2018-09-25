@@ -10,7 +10,7 @@ public class GenerateStory
     	TimeUnit.SECONDS.sleep((long) 1.5); 
     	System.out.print("I am the new kid in town.");
     	System.out.println("");
-    	System.out.println("You move around a");
+    	System.out.println("I have to move around a lot because of my dad's work.");
     	
     	
      }
