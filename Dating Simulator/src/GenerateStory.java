@@ -37,6 +37,7 @@ public class GenerateStory
     	userInput.nextLine();
     	
     	System.out.println("'Ah, I might as well get some rest, don't want to be exhausted on my first day...'");
+    	System.out.println("(Hit enter to begin your first day)");
     	userInput.nextLine();
     	
     	clearConsole();
