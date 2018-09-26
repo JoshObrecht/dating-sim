@@ -17,6 +17,18 @@ public class Character
 		dislikes=d;
 		socialStanding=s;
 		}
+		
+		public void expressDislike()
+		{
+			System.out.println(name + " disliked that.");
+			attraction-=1;
+		}
+		
+		public void expressLike()
+		{
+			System.out.println(name + " liked that.");
+			attraction+=1;
+		}
 
 		public String getName()
 			{

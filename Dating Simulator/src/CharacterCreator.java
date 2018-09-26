@@ -8,17 +8,18 @@ public class CharacterCreator
 		static Scanner userInt = new Scanner(System.in);
 		static Player player = new Player("", 0, 0, 0, 0);
 		
+		static Character c0 = new Character("Brad", 1, 0, 0, 1, 10); //Shark
+		static Character c1 = new Character("Rhonda", 0, 0, 1, 2, 10); //Dolphin
+		static Character c2 = new Character("Claudia", 0, 0, 2, 3, 4); //Swordfish
+		static Character c3 = new Character("Janice", 0, 0, 3, 4, 1); //Puffer fish
+		static Character c4 = new Character("Gerald", 1, 0, 4, 5, 5); //Clown fish
+		static Character c5 = new Character("Owen", 1, 0, 5, 6, 6); //Tuna
+		static Character c6 = new Character("Dunham", 1, 0, 20, 20, 20); //Human-Easter Egg
+		
 		public static void createCharacters()
 			{
 			
-				
-			Character c0 = new Character("Brad", 1, 0, 0, 1, 10); //Shark
-			Character c1 = new Character("Rhonda", 0, 0, 1, 2, 10); //Dolphin
-			Character c2 = new Character("Claudia", 0, 0, 2, 3, 4); //Swordfish
-			Character c3 = new Character("Janice", 0, 0, 3, 4, 1); //Puffer fish
-			Character c4 = new Character("Gerald", 1, 0, 4, 5, 5); //Clown fish
-			Character c5 = new Character("Owen", 1, 0, 5, 6, 6); //Tuna
-			Character c6 = new Character("Dunham", 1, 0, 20, 20, 20); //Human-Easter Egg
+			
 			
 			characters.add(c0);
 			characters.add(c1);
