@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable;
 public class DatingSimRunner
 	{
 		
@@ -9,7 +8,8 @@ public class DatingSimRunner
 			{
 //				CharacterCreator.createCharacters();
 //				CharacterCreator.createPlayer();
-				GenerateStory.basicStory();
+				GenerateStory.beginPrologue();
+				GenerateStory.beginDayOne();
 
 			}
 		

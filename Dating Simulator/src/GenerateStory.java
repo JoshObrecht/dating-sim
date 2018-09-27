@@ -4,12 +4,13 @@ public class GenerateStory
 	{
 	 static Scanner userInput= new Scanner(System.in);
 	 static int scale=1;
-     public static void basicStory() throws InterruptedException
+     public static void beginPrologue() throws InterruptedException
      {
     	
     	System.out.print(CharacterCreator.player.getName()+": 'Once again, ");
     	TimeUnit.SECONDS.sleep((long) ((long) scale*1.5)); 
     	System.out.println("I am the new kid in town...'");
+    	TimeUnit.SECONDS.sleep((long) ((long) scale*1)); 
     	System.out.println("(Whenever you see an elipse hit enter to advance the text on screen)");
     	userInput.nextLine();
 
@@ -37,18 +38,37 @@ public class GenerateStory
     	System.out.println("'Tommorrow is my first day of school and I'm stressing out...'");
     	userInput.nextLine();
     	
+    	if((CharacterCreator.player.getCharisma()>=7)&&(CharacterCreator.player.getCharisma()<10))
+    		{
+    		System.out.println("'Although I really shouldn't worry. I've always been able to make friends really really easily...'");
+    		userInput.nextLine();
+    		}
+    	else if((CharacterCreator.player.getCharisma()<7)&&(CharacterCreator.player.getCharisma()>=4))
+    		{
+    		System.out.println("'I'm not totally worried, though, most of the time I've been able to find a small group of friends that I get along with...");
+    		userInput.nextLine();
+    		}
+    	else
+    		{
+    		System.out.println("'Making friends is not my forte. I spent most of my lunches over the last few years under a tree by myself...'");
+    		userInput.nextLine();
+    		}
+    	
     	System.out.println("'Ah, I might as well get some rest, don't want to be exhausted on my first day...'");
     	System.out.println("(Hit enter to begin your first day)");
     	userInput.nextLine();
     	
     	clearConsole();
     	
-    	System.out.println("DAY ONE");
     	
     	
-    	
-    	
-    	
+    	 	
+     }
+     public static void beginDayOne()
+     {
+    	 System.out.println("DAY ONE...");
+    	 userInput.nextLine();
+    	 System.out.println("");
      }
      public final static void clearConsole()
     	 {
