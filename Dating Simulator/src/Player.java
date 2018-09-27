@@ -4,15 +4,15 @@ public class Player
 	private String name;
 	private int popularity;
 	private int charisma;
-	private int confidence;
+	private int intelligence;
 	private int luck;
 	
-	public Player(String n, int p, int ch, int con, int l)
+	public Player(String n, int p, int ch, int i, int l)
 	{
 		n=name;
 		p=popularity;
 		ch=charisma;
-		con=confidence;
+		i=intelligence;
 		l=luck;
 	}
 
@@ -56,14 +56,14 @@ public class Player
 			this.luck = luck;
 		}
 
-	public int getConfidence()
+	public int getIntelligence()
 		{
-			return confidence;
+			return intelligence;
 		}
 
 	public void setConfidence(int confidence)
 		{
-			this.confidence = confidence;
+			this.intelligence = confidence;
 		}
 	
 	
