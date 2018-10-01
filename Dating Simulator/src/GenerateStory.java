@@ -61,12 +61,28 @@ public class GenerateStory
      
      public static String printText(String s) throws InterruptedException
      {
+    	 int counter=1;
+    	 boolean check=false;
     	 for(int i=0; i<s.length(); i++)
     	 {
+    
     		System.out.print(s.substring(i, i+1));
     		Thread.sleep(50L);
+//    		if(userInput.nextLine()!=null)
+//    			{
+//    				check= true;
+//    				break;
+//    			}
+//    		counter+=1;
+    		
     	 }
+    	 if(check)
+    		 {
+    	 System.out.print(s.substring(counter));
     	 System.out.println("");
+    		 }
+    	 System.out.println("");
+    
     	 return s;
      }
      

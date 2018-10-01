@@ -29,7 +29,7 @@ public class CharacterCreator
 			characters.add(c5);
 			characters.add(c6);
 			}
-			public static void createPlayer()
+			public static void createPlayer() throws InterruptedException
 			{
 				
 			int confidence=0;
@@ -173,6 +173,8 @@ public class CharacterCreator
 			player.setName(userString.nextLine());
 			player.setCharisma(charisma);
 			player.setConfidence(confidence);
+			
+			SaveGame.saveGame();
 				
 			}
 	}

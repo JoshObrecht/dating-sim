@@ -8,8 +8,11 @@ public class DatingSimRunner
 			{
 //				CharacterCreator.createCharacters();
 //				CharacterCreator.createPlayer();
-				GenerateStory.beginPrologue();
-				GenerateStory.beginDayOne();
+//				GenerateStory.beginPrologue();
+//				GenerateStory.beginDayOne();
+				SaveGame.saveGame();
+				SaveGame.loadGame();
+
 
 			}
 		//test
