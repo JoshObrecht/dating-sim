@@ -10,15 +10,32 @@ public class Player implements Serializable
 	private int charisma;
 	private int intelligence;
 	private int luck;
+	private int state;
 	
-	public Player(String n, int p, int ch, int i, int l)
+	public Player(String n, int p, int ch, int i, int l, int s)
 	{
 		n=name;
 		p=popularity;
 		ch=charisma;
 		i=intelligence;
 		l=luck;
+		s=state;
 	}
+
+	public int getState()
+		{
+			return state;
+		}
+
+	public void setState(int state)
+		{
+			this.state = state;
+		}
+
+	public void setIntelligence(int intelligence)
+		{
+			this.intelligence = intelligence;
+		}
 
 	public String getName()
 		{
@@ -65,10 +82,7 @@ public class Player implements Serializable
 			return intelligence;
 		}
 
-	public void setConfidence(int confidence)
-		{
-			this.intelligence = confidence;
-		}
+	
 	
 	
 	
