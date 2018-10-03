@@ -101,6 +101,18 @@ public class GenerateStory
     	 printText("However, the only way to survive outside is to slip on helmet and oxygen tank your dad's work provided...");
     	 userInput.nextLine();
     	 printText("You run to your front door and enter the airlock. You take a deep breath and open the door to the outside...");
+    	 userInput.nextLine();
+    	 printText("The airlock floods with water. You take an even deeper breath and swim out to your car...");
+    	 userInput.nextLine();
+    	 printText("Walking is possible, but much slower, and your dad is already inclredibly angry at you for sleeping in so you figure swimming is the best idea...");
+    	 userInput.nextLine();
+    	 printText("You climb into the car and your dad pulls out of the driveway without a word.");
+    	 printText("As you're driving to school, you sneak a look at him. He's quietly staring ahead with a somber expression on his face...");
+    	 userInput.nextLine();
+    	 printText("After about 6 minutes of silence, he begins to speak.");
+    	 printText("DAD: 'You know I really am sorry, "+CharacterCreator.player.getName()+". In all likelihood we won't be stuck down here forever.");
+    	 printText("He pauses for a second.");
+    	 printText("Let's just try and make the best of this while we're here and we'll be gone before you know it...");
      }
      
      public static String printText(String s) throws InterruptedException
