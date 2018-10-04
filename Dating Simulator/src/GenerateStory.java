@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import sun.management.counter.perf.PerfInstrumentation;
-
 public class GenerateStory
 	{
 	 static Scanner userInput= new Scanner(System.in);
@@ -113,32 +111,42 @@ public class GenerateStory
     	 printText("DAD: 'You know I really am sorry, "+CharacterCreator.player.getName()+". In all likelihood we won't be stuck down here forever.");
     	 printText("He pauses for a second.");
     	 printText("Let's just try and make the best of this while we're here and we'll be gone before you know it...");
+    	 userInput.nextLine();
+    	 printText("Your dad pulls up in front of the school.");
+    	 printText("You see groups of people, well not people- groups of highly intelligent sea creatures mingle about in front of the school...");
+    	 userInput.nextLine();
+    	 printText("DAD: 'Well.....Have a good day at school...");
+    	 printText("");
+    	 printText("1) Love you dad...\n"
+    	 		 + "2) ...");
+    	 if(userInput.nextInt()==1)
+    		 {
+    			 printText("DAD: '...'");
+    			 userInput.nextLine();
+    			 userInput.nextLine();
+    			 printText("DAD: '...Love you too, "+CharacterCreator.player.getName()+"...'");
+    		 }
+    	 else
+    		 {
+    			 printText("DAD: 'I'll see you when I pick you up. 3:00 okay?...'");
+    		 }
+    	 
+    	 userInput.nextLine();
+    	 userInput.nextLine();
+    	 printText("You step out of the car and head into the unknown...");
+    	 userInput.nextLine();
+    	 printText("You decide to walk this time, the longer it takes to get to school, the longer it takes for you to begin your first day...");
+    	 userInput.nextLine();
+    	 printText("?: '...oh cmon, Brad pleaaaaaaaase.");
      }
      
      public static String printText(String s) throws InterruptedException
      {
-    	 int counter=1;
-    	 boolean check=false;
     	 for(int i=0; i<s.length(); i++)
     	 {
-    
     		System.out.print(s.substring(i, i+1));
-    		Thread.sleep(10L);
-//    		if(userInput.nextLine()!=null)
-//    			{
-//    				check= true;
-//    				break;
-//    			}
-//    		counter+=1;
-    		
+    		Thread.sleep(0L);
     	 }
-    	 if(check)
-    		 {
-    	 System.out.print(s.substring(counter));
-    	 System.out.println("");
-    		 }
-    	 System.out.println("");
-    
     	 return s;
      }
      

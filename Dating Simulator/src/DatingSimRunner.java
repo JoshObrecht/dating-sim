@@ -7,7 +7,7 @@ public class DatingSimRunner
 		public static void main(String[] args) throws InterruptedException
 			{
 //				CharacterCreator.createCharacters();
-//				CharacterCreator.createPlayer();
+				CharacterCreator.createPlayer();
 				SaveGame.loadGame();
 //				GenerateStory.beginPrologue();
 //				GenerateStory.beginDayOne();
