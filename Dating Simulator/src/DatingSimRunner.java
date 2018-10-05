@@ -11,10 +11,13 @@ public class DatingSimRunner
 				GenerateStory.printText("Welcome to 'All the Fish in the Sea'!");
 				GenerateStory.printText("(Press any button to begin)");
 				userInput.nextLine();
+				
 				GenerateStory.clearConsole();
+				
 				GenerateStory.printText("1) New Game \n"
 						+ "2) Load Game\n"
 						+ "(Type the number that corresponds with the desired option)");
+				
 				if(userInput.nextInt()==1)
 					{
 						CharacterCreator.createCharacters();
