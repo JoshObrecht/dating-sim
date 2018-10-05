@@ -138,15 +138,21 @@ public class GenerateStory
     	 printText("You decide to walk this time, the longer it takes to get to school, the longer it takes for you to begin your first day...");
     	 userInput.nextLine();
     	 printText("?: '...oh cmon, Brad pleaaaaaaaase.");
+    	 printText("You turn to your left and see a starfish clinging to the arm of a shark.");
+    	 printText("The shark, who you can safely assume is Brad, starts speaking to the starfish...");
+    	 userInput.nextLine();
+    	 printText("BRAD: 'Cynthia, I would just loveeeeee to come to your party tonight, but we got a football game tomorrow. Gotta make sure I get my rest, y'know?...");
+    	 userInput.nextLine();
      }
-     
+   
      public static String printText(String s) throws InterruptedException
      {
     	 for(int i=0; i<s.length(); i++)
     	 {
     		System.out.print(s.substring(i, i+1));
-    		Thread.sleep(0L);
+    		Thread.sleep(10L);
     	 }
+    	 System.out.println("");
     	 return s;
      }
      

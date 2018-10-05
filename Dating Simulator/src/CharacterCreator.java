@@ -173,6 +173,7 @@ public class CharacterCreator
 				c3.setAttraction(2);
 				c5.setAttraction(1);
 				c6.setAttraction(1);
+				player.setLuck(0);
 				}
 			if(charisma==10)
 				{
@@ -182,6 +183,7 @@ public class CharacterCreator
 				c3.setAttraction(0);
 				c5.setAttraction(1);
 				c6.setAttraction(1);
+				player.setLuck(0);
 				}
 			if((charisma<=8)&&(charisma>=2))
 				{
@@ -191,6 +193,7 @@ public class CharacterCreator
 				c3.setAttraction(0);
 				c5.setAttraction(0);
 				c6.setAttraction(0);	
+				player.setLuck(1);
 				}
 			if((intelligence<=8)&&(intelligence>=2))
 				{
@@ -199,7 +202,8 @@ public class CharacterCreator
 				c2.setAttraction(1);
 				c3.setAttraction(1);
 				c5.setAttraction(0);
-				c6.setAttraction(0);		
+				c6.setAttraction(0);
+				player.setLuck(1);
 				}
 			if(intelligence==0)
 				{
@@ -208,7 +212,8 @@ public class CharacterCreator
 				c2.setAttraction(0);
 				c3.setAttraction(0);
 				c5.setAttraction(1);
-				c6.setAttraction(1);		
+				c6.setAttraction(1);	
+				player.setLuck(2);
 				}
 	
 			
