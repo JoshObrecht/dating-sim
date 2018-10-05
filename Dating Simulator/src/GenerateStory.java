@@ -33,7 +33,7 @@ public class GenerateStory
     		}
     	else if((CharacterCreator.player.getCharisma()<7)&&(CharacterCreator.player.getCharisma()>=4))
     		{
-    		printText("'I'm not totally worried, though, most of the time I've been able to find a small group of friends that I get along with...");
+    		printText("'I'm not totally worried, though, most of the time I've been able to find a small group of friends that I get along with...'");
     		userInput.nextLine();
     		}
     	else
