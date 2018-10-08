@@ -15,7 +15,7 @@ public class CharacterCreator
 		static Character c4 = new Character("Janice", 1, 0, 4, 5, 5); //Clown fish-in the middle
 		static Character c5 = new Character("Jim", 1, 0, 5, 6, 5); //Tuna-in the middle
 		
-		static Character c6 = new Character("Dunham", 1, 0, 20, 20, 20); //Human-Easter Egg
+		static Character c6 = new Character("Dunham", 100, 100, 100, 100, 100); //Fish(?)
 		
 		public static void createCharacters()
 			{
@@ -226,6 +226,8 @@ public class CharacterCreator
 			player.setIntelligence(intelligence);
 			
 			SaveGame.saveGame();
+			GenerateStory.printText("(The game will automatically save at key moments. Press enter to continue.)");
+			userString.nextLine();
 				
 			}
 	}

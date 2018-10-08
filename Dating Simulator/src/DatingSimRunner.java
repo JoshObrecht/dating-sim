@@ -22,15 +22,14 @@ public class DatingSimRunner
 					{
 						CharacterCreator.createCharacters();
 						CharacterCreator.createPlayer();
+						GenerateStory.clearConsole();
 						GenerateStory.beginPrologue();
 					}
 				else
 					{
+						GenerateStory.clearConsole();
 						SaveGame.loadGame();
 					}
-
-				CharacterCreator.createPlayer();
-				SaveGame.loadGame();
 			}
 		
 	}

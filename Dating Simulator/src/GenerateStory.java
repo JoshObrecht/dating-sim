@@ -4,9 +4,24 @@ public class GenerateStory
 	{
 	 static Scanner userInput= new Scanner(System.in);
 	 static int scale=1;
+     static int party=0;
+     static int dice=0;
+    
      public static void beginPrologue() throws InterruptedException
      {
-    	
+    	 if(CharacterCreator.player.getLuck()==0)
+    		 {
+    			dice=(int)(Math.random()*100)+1; 
+    		 }
+    	 else if(CharacterCreator.player.getLuck()==1)
+    		 {
+    			 dice=(int)(Math.random()*50)+1; 
+    		 }
+    	 else
+    		 {
+    			 dice=(int)(Math.random()*10)+1;
+    		 }
+    	 
     	printText(CharacterCreator.player.getName()+": 'Once again, I am the new kid in town...'");
     	printText("(Whenever you see an ellipsis hit enter to advance the text on screen)");
     	userInput.nextLine();
@@ -78,6 +93,7 @@ public class GenerateStory
     			 printText("DAD: 'Sorry doesn't cut it. YOU HAVE TEN MINUTES TO BE IN THE CAR...'");
     			 break;
     		 case 2:
+    			 printText("The pillow hits the wall with a dull thud and then slowly slides to the bottom.");
     			 printText("DAD: 'I will never understand you. After 30 seconds you suddenly decide to throw your pillow at me.'");
     			 printText("He gives you a look of the utmost disgust and then leaves the room...");
     			 break;
@@ -90,7 +106,7 @@ public class GenerateStory
     			 break;
     	 }
     	 userInput.nextLine();
-    	 userInput.nextLine();
+
     	 
     	 printText("Afraid your dad is going to leave without you, you scramble out of bed to get ready as fast as possible...");
     	 userInput.nextLine();
@@ -117,8 +133,8 @@ public class GenerateStory
     	 userInput.nextLine();
     	 printText("DAD: 'Well.....Have a good day at school...");
     	 printText("");
-    	 printText("1) Love you dad...\n"
-    	 		 + "2) ...");
+    	 printText("1) 'Love you dad...'\n"
+    	 		 + "2) '...'");
     	 if(userInput.nextInt()==1)
     		 {
     			 printText("DAD: '...'");
@@ -137,12 +153,82 @@ public class GenerateStory
     	 userInput.nextLine();
     	 printText("You decide to walk this time, the longer it takes to get to school, the longer it takes for you to begin your first day...");
     	 userInput.nextLine();
-    	 printText("?: '...oh cmon, Brad pleaaaaaaaase.");
+    	 printText("?: '...oh cmon, Brad pleaaaaaaaase.'");
     	 printText("You turn to your left and see a starfish clinging to the arm of a shark.");
     	 printText("The shark, who you can safely assume is Brad, starts speaking to the starfish...");
     	 userInput.nextLine();
-    	 printText("BRAD: 'Cynthia, I would just loveeeeee to come to your party tonight, but we got a football game tomorrow. Gotta make sure I get my rest, y'know?...");
+    	 printText("BRAD: 'Cynthia, I would just loveeeeee to come to your party tonight, but we got a football game tomorrow. Gotta make sure I get my rest, y'know?...'");
     	 userInput.nextLine();
+    	 printText("Brad suddenly turns toward you...");
+    	 userInput.nextLine();
+    	 CharacterCreator.c0.setAttraction(2);
+    	 if(CharacterCreator.c0.getAttraction()>=1)
+    		 {
+    			 printText("He starts walking toward you...");
+    			 userInput.nextLine();
+    			 printText("BRAD: 'Hey there, are you new here?'");
+    			 printText("");
+    			 printText("1) 'Yeah! I just moved here from San Diego.'\n"
+    			 		 + "2) 'Yup! Fresh off the boat.'\n"
+    			 		 + "3) '...'");
+    			 switch(userInput.nextInt())
+    			 {
+    				 case 1:
+    					 printText("BRAD: 'San Diego? Isn't that where Sea World is? MY DAD WAS CAPTURED SEA WORLD.'");
+    					 CharacterCreator.c0.expressDislike();
+    					 printText("Brad walks away...");
+    					 userInput.nextLine();
+    					 userInput.nextLine();
+    					 break;
+    				 case 2:
+    					 printText("BRAD: 'That's cool yo. Hey, so Cynthia's having a party tonight, you should come.'");
+    					 printText("");
+    					 printText("1) 'Sure!'\n"
+    					 		 + "2) 'I'm sorry I think I'm busy tonight.");
+    					 if(userInput.nextInt()==1)
+    						 {
+    							 CharacterCreator.c0.expressLike();
+    							 party+=1;
+    							 printText("BRAD: 'Coooool, I'll see ya there...'");
+    							 userInput.nextLine();
+    							 userInput.nextLine();
+    						 }
+    					 else
+    						 {
+    							printText("BRAD: 'Well I'll see ya around I guess...'");
+    							userInput.nextLine();
+   							    userInput.nextLine();
+    						 }
+    					 break;
+    				 case 3:
+    					 printText("BRAD: 'Um....So hey, Cynthia's having a party tonight, you should come.'");
+    					 printText("");
+    					 printText("1) 'Sure!'\n"
+    					 		 + "2) 'I'm sorry I think I'm busy tonight.");
+    					 if(userInput.nextInt()==1)
+    						 {
+    							 CharacterCreator.c0.expressLike();
+    							 party+=1;
+    							 printText("BRAD: 'Coooool, I'll see ya there...'");
+    							 userInput.nextLine();
+    							 userInput.nextLine();
+    						 }
+    					 else
+    						 {
+    							printText("BRAD: 'Well I'll see ya around I guess...'");
+    							userInput.nextLine();
+   							    userInput.nextLine();
+    						 }
+    					 break;
+    			 }
+    			
+    		 }
+    	 else
+    		 {
+    		 printText("Brad takes one look at you and then looks away...");
+    		 userInput.nextLine();
+    		 }
+    	 printText("You keep walking...");
      }
    
      public static String printText(String s) throws InterruptedException
