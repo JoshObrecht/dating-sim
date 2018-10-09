@@ -76,7 +76,7 @@ public class GenerateStory
     	 printText("?: 'HEY!!!!...'");
     	 userInput.nextLine();
     	 printText("W H A M");
-    	 printText("You feel something slam into your head. Your head throbs as you are jostled awake...");
+    	 printText("You feel something soft slam into your head. Your head throbs as you are jostled awake...");
     	 userInput.nextLine();
     	 
     	 printText("As your eyes adjust to the light you see your dad standing over you. He's visibly furious.");
@@ -112,7 +112,7 @@ public class GenerateStory
     	 userInput.nextLine();
     	 printText("You throw on a wetsuit and some random clothes on top of it. Thankfully, your house is completely drained of water and pumped with oxygen so you can exist under normal conditions while at home...");
     	 userInput.nextLine();
-    	 printText("However, the only way to survive outside is to slip on helmet and oxygen tank your dad's work provided...");
+    	 printText("However, the only way to survive outside is to slip on the helmet and oxygen tank your dad's work provided...");
     	 userInput.nextLine();
     	 printText("You run to your front door and enter the airlock. You take a deep breath and open the door to the outside...");
     	 userInput.nextLine();
@@ -124,14 +124,14 @@ public class GenerateStory
     	 printText("As you're driving to school, you sneak a look at him. He's quietly staring ahead with a somber expression on his face...");
     	 userInput.nextLine();
     	 printText("After about 6 minutes of silence, he begins to speak.");
-    	 printText("DAD: 'You know I really am sorry, "+CharacterCreator.player.getName()+". In all likelihood we won't be stuck down here forever.");
+    	 printText("DAD: 'You know I really am sorry, "+CharacterCreator.player.getName()+". In all likelihood we won't be stuck down here forever.'");
     	 printText("He pauses for a second.");
-    	 printText("Let's just try and make the best of this while we're here and we'll be gone before you know it...");
+    	 printText("'Let's just try and make the best of this while we're here and we'll be gone before you know it...'");
     	 userInput.nextLine();
     	 printText("Your dad pulls up in front of the school.");
     	 printText("You see groups of people, well not people- groups of highly intelligent sea creatures mingle about in front of the school...");
     	 userInput.nextLine();
-    	 printText("DAD: 'Well.....Have a good day at school...");
+    	 printText("DAD: 'Well.....Have a good day at school...'");
     	 printText("");
     	 printText("1) 'Love you dad...'\n"
     	 		 + "2) '...'");
@@ -161,7 +161,6 @@ public class GenerateStory
     	 userInput.nextLine();
     	 printText("Brad suddenly turns toward you...");
     	 userInput.nextLine();
-    	 CharacterCreator.c0.setAttraction(2);
     	 if(CharacterCreator.c0.getAttraction()>=1)
     		 {
     			 printText("He starts walking toward you...");
@@ -184,7 +183,7 @@ public class GenerateStory
     					 printText("BRAD: 'That's cool yo. Hey, so Cynthia's having a party tonight, you should come.'");
     					 printText("");
     					 printText("1) 'Sure!'\n"
-    					 		 + "2) 'I'm sorry I think I'm busy tonight.");
+    					 		 + "2) 'I'm sorry I think I'm busy tonight.'");
     					 if(userInput.nextInt()==1)
     						 {
     							 CharacterCreator.c0.expressLike();
@@ -236,7 +235,7 @@ public class GenerateStory
     	 for(int i=0; i<s.length(); i++)
     	 {
     		System.out.print(s.substring(i, i+1));
-    		Thread.sleep(10L);
+    		Thread.sleep(15L);
     	 }
     	 System.out.println("");
     	 return s;

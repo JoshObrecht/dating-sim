@@ -4,7 +4,7 @@ public class Character implements Serializable
 	{
 		private static final long serialVersionUID =1L;	
 		
-		//each scale maxes out at 5
+		//each scale maxes out at 10
 		
 		private String name;
 		private int gender;
